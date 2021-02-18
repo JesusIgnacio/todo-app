@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='todoapp.js'></script>
+</head>
+<body>
+    <main class="board">
+        <div class="column column-todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Todo</h2>
+        <article class="card" draggable="true" ondragstart="drag(event)" data-id="1">
+            <h3>Todo #1</h3>
+        </article>
+        <article class="card" draggable="true" ondragstart="drag(event)" data-id="2">
+            <h3>Todo #2</h3>
+        </article>
+        <article class="card" draggable="true" ondragstart="drag(event)" data-id="3">
+            <h3>Todo #3</h3>
+        </article>
+        </div>
+        <div class="column column-ip" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>In Progress</h2>
+        <article class="card" draggable="true" ondragstart="drag(event)" data-id="4">
+            <h3>IP #1</h3>
+        </article>
+        <article class="card" draggable="true" ondragstart="drag(event)" data-id="5">
+            <h3>IP #2</h3>
+        </article>
+        <article class="card" draggable="true" ondragstart="drag(event)" data-id="6">
+            <h3>IP #3</h3>
+        </article>
+        </div>
+        <div class="column column-done" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Done</h2>
+        <article class="card" draggable="true" ondragstart="drag(event)" data-id="7">
+            <h3>Done #1</h3>
+        </article>
+        <article class="card" draggable="true" ondragstart="drag(event)" data-id="8">
+            <h3>Done #2</h3>
+        </article>
+        <article class="card" draggable="true" ondragstart="drag(event)" data-id="9">
+            <h3>Done #3</h3>
+        </article>
+        </div>
+    </main>
+</body>
+</html>
