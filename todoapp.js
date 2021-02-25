@@ -24,7 +24,7 @@ const drop = event => {
          .forEach(column => column.classList.remove('drop'));
 
     document.querySelector(`[data-id="${event.dataTransfer.getData('text/plain')}"]`).remove();
-
+    event.preventDefault();
     event.currentTarget.innerHTML = event.currentTarget.innerHTML + event.dataTransfer.getData('text/html');
 };
 
